@@ -14,7 +14,7 @@
   <!-- navegador -->
   <nav>
     <div class="nav-wrapper #000000 black">
-      <a href="#" class="brand-logo center">Alimentos y bebidas</a>
+      <a href="#" class="brand-logo center">Restaurantes</a>
     </div>
   </nav>
 
@@ -27,23 +27,49 @@
   </section>
 
   <!-- buscador -->
-  <nav>
-  <div class="nav-wrapper #000000 black">
-    <form>
-      <div class="input-field">
-        <input id="search" type="search" required>
-        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-        <i class="material-icons">close</i>
-      </div>
-    </form>
-  </div>
-</nav>
+  <nav class="navbar-fixed #000000 black">
+    <div class="nav-wrapper">
+      <form id="search-form" class="left">
+        <div class="input-field">
+          <input id="search" type="search">
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+      <a href="#" class="brand-logo center">Alimentos y bebidas</a>
+    </div>
+  </nav>
 
-<!-- lista de lugares -->
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSHWXeEWX44bO1jEfIbG-NjFpnjsA6lck&callback=initMap"></script>
+  <!-- lista de lugares -->
+  <main class="container">
+    <section class="row">
+      <section class="contacts">
+
+        <article class="row contact">
+          <div class="card-panel hoverable grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s3">
+                <img src="http://www.lepainquotidien.mx/wp-content/uploads/sites/7/2016/04/1.jpg" alt="Contact" class="circle responsive-img">
+              </div>
+              <div class="col s9">
+                <h5 class="name">Le Pain Quotidien Roma</h5>
+                <p class="food">Comida Internacional</p>
+                <span class="black-text">
+                  Dirección: Monterrey 104, Roma Nte., 06700 Ciudad de México, CDMX
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+    </section>
+  </main>
+
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSHWXeEWX44bO1jEfIbG-NjFpnjsA6lck&callback=initMap"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="./js/materialize.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
